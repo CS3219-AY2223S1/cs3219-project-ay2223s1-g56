@@ -11,7 +11,9 @@ const LoginPage = () => {
 
       <div className="login-btn">Login</div>
 
-      <p className="small-text">Don't have account? Sign up here</p>
+      <p className="small-text">
+        Don't have account? Sign up <Link to="/signup">here</Link>
+      </p>
     </div>
   );
 };
