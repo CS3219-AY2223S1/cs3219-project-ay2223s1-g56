@@ -17,7 +17,7 @@ export async function ormUserExists(username) {
         const exists = await userExists({username});
         return exists;
     } catch (err) {
-        console.log(err);
+        console.log('ERROR: Could not check if user exists');
         return { err };
     }
 }
