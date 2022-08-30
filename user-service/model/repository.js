@@ -15,3 +15,7 @@ export async function createUser(params) {
   return new UserModel(params)
 }
 
+export async function userExists(params) {
+  return UserModel.exists(params)
+}
+
